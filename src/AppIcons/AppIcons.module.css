@@ -1,0 +1,30 @@
+.AppIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  border:1px solid #d0d0d0;
+  color: #131126;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  flex-wrap: wrap;
+}
+
+.rating {width:232px;}
+
+.images {
+  width: 53px;
+  height:53px;
+}
+
+@media screen and (max-width:450px) {
+  .AppIcons {
+    overflow: scroll;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+}

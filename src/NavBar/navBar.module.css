@@ -1,0 +1,72 @@
+.navWrapper, .navBar, .faq {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq { 
+  flex-direction: column; 
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  justify-content: space-around;
+  
+}
+
+.navLogoLinksWrapper {
+  display: flex;
+  gap:88px;
+}
+
+.logoWrapper {
+   background-image: url('../assets/Vector.png');
+   width:27.55px;
+   height: 34.78px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.dot {
+  width:7.83px;
+  height: 7.83px;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  z-index: 1;
+  margin-top: 5px;
+  margin-right: 3px;
+}
+
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size:2.1em;
+}
+
+
+.navBar {
+  display: flex;
+  gap: 80px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ContactButton {
+  width: 139px;
+  height: 50px;
+  background: #FAE0E1;  
+  border-radius: 5px;
+  outline: none;
+  border:none;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+} 
+
+@media screen and (max-width:450px) {
+  .navBar {display: none;}
+  .faq {
+    gap:30px;
+  }
+}

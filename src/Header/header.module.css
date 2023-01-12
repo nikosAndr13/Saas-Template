@@ -1,0 +1,110 @@
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap:40px;
+}
+
+.headerTitle {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 62px;
+  max-width: 590px;
+}
+
+.headersubText {
+  width: 530px;
+  height: 93px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #131126;
+  flex-wrap: wrap;
+}
+
+.squareButton {
+  width: 48px;
+  height: 50px;
+  border: 1px solid #FAE0E1;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContactSubSection {
+  display: flex;
+  align-items: center;
+  gap:20px;
+}
+
+.Demo {
+  font-size: 16px;
+  line-height: 28px;
+  color: #131126;
+}
+
+.square {
+  width: 468px;
+  height: 490px;
+  background: #FAE0E1;
+  border-radius: 5px;
+  position: relative;
+}
+
+.starColor {background: #FAE0E1;}
+
+.Diagram {
+ position: absolute;
+ left:-180px;
+}
+
+.twistyArrow {
+  position: absolute;
+  width: 136.11px;
+  height: 131.83px;
+  left:380px;
+  top: 10px;
+}
+
+.Woman {
+  position: absolute;
+  width: 490px;
+  left:-40px;
+  bottom:0;
+}
+
+@media screen and (max-width: 450px) {
+  .headerWrapper {
+    gap:100px;
+  }
+  .headerTitle {
+    font-size: 36px;
+    line-height: 120%;
+  }
+  .headersubText {
+    width:initial;
+    height: initial;
+    font-size: 14px;
+  }
+
+  .twistyArrow, .Diagram {display: none;}
+  .Woman {
+    width:90vw;
+    left:0;
+  }
+  .square {height: 40vh;}
+
+  .ContactSubSection .headerTitle {
+    font-size: initial;
+  }
+}
